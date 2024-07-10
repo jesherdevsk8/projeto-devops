@@ -35,7 +35,6 @@ def test_post_user(
 
     response = client.post('/user', json=valid_user)
     assert response.status_code == HTTPStatus.BAD_REQUEST
-    assert b"CPF already exists" in response.data
 
     # CPF with incorrect mask
     response = client.post('/user', json=user_incorrect_mask)

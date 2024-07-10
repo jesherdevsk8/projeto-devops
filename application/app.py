@@ -95,5 +95,5 @@ class User(Resource):
             response = UserModel(**data).save()
             msg = {"message": "User %s successfully created!" % response.id}
             return msg, HTTPStatus.CREATED
-        except NotUniqueError:
-            return {"message": "CPF already exists!"}, HTTPStatus.BAD_REQUEST
+        except NotUniqueError as e:
+            return {"message": str(e)}, HTTPStatus.BAD_REQUEST
