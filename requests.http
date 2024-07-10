@@ -1,0 +1,38 @@
+###
+### Create User
+###
+
+POST http://127.0.0.1:5000/user
+Content-Type: application/json
+
+{
+    "first_name": "Jesher Minelli",
+    "last_name": "Alves",
+    "cpf": "641.396.500-28",
+    "email": "jesherdevsk8@gmail.com",
+    "birth_date": "1994-06-08"
+}
+
+###
+### Get Users
+###
+
+GET http://127.0.0.1:5000/users
+
+###
+### Get Specific User by CPF
+###
+
+GET http://127.0.0.1:5000/users?cpf=641.396.500-28
+
+###
+### Get Specific User by Email
+###
+
+GET http://127.0.0.1:5000/users?email=jesherdevsk8@gmail.com
+
+###
+### Get Specific User by CPF and Email
+###
+
+GET http://127.0.0.1:5000/users?cpf=641.396.500-28&email=jesherdevsk8@gmail.com
