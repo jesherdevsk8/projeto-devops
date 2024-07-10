@@ -14,4 +14,3 @@ def create_app(config):
     api.add_resource(User, '/user', '/user/<string:cpf>')
 
     return app
- 

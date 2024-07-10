@@ -10,6 +10,8 @@ RUN pip install -r requirements.txt
 
 COPY wsgi.py .
 COPY config.py .
+COPY conftest.py .
 COPY application application
+COPY tests tests
 
 CMD [ "python", "wsgi.py" ]
