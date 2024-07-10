@@ -20,10 +20,10 @@ class ProdConfig:
 
     MONGODB_SETTINGS = {
         'host': 'mongodb+srv://%s:%s@%s/%s?retryWrites=true&w=majority' % (
-          MONGODB_USER,
-          MONGODB_PASSWORD,
-          MONGODB_HOST,
-          MONGODB_DB
+            MONGODB_USER,
+            MONGODB_PASSWORD,
+            MONGODB_HOST,
+            MONGODB_DB
         )
     }
 
