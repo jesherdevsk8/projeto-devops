@@ -1,5 +1,6 @@
-from application import create_app
 import os
+
+from application import create_app
 
 
 if os.getenv("FLASK_ENV") == "development":
